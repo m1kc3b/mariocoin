@@ -1,3 +1,3 @@
 # MarioCoin 🪙
 
-<img src="./mariocoin.webp" />
+<img src="./mariocoin.webp" width="300" />

@@ -1,9 +1,17 @@
 use crate::U256;
 use sha256::digest;
 use serde::Serialize;
+use std::fmt;
+
 
 #[derive(Clone, Copy, Serialize)]
 pub struct Hash(U256);
+
+impl fmt::Display for Hash {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{:X}", self.0)
+    }
+}
 
 impl Hash {
     pub fn hash<T: Serialize>(data: &T) -> Self {

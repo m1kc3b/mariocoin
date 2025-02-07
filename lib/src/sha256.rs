@@ -1,10 +1,10 @@
 use crate::U256;
 use sha256::digest;
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 use std::fmt;
 
 
-#[derive(Clone, Copy, Serialize)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Hash(U256);
 
 impl fmt::Display for Hash {
@@ -27,7 +27,7 @@ impl Hash {
             .try_into()
             .unwrap();
 
-        Hash(U256::from(hash_array))
+        Hash(U256::from_big_endian(&hash_array))
     }
 
     pub fn matches_target(&self, target: U256) -> bool {

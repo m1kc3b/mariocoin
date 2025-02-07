@@ -4,8 +4,10 @@ mod utils;
 mod crypto;
 
 use uint::construct_uint;
+use serde::{Deserialize, Serialize};
 
 construct_uint! {
+    #[derive(Deserialize, Serialize)]
     pub struct U256(4);
 }
 

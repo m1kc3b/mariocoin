@@ -1,4 +1,3 @@
-<img src="./mariocoin.webp" width="300" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
+<img src="./mariocoin.webp" alt="MarioCoin" width="200" style="display: block; margin: 0 auto; width: 50%;" />
 
-# MarioCoin 🪙
-
+<h1>MarioCoin 🪙</h1>

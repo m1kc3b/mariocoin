@@ -9,7 +9,7 @@ ciborium = "0.2.2"
 ecdsa = { version = "0.16.9", features = ["signing", "verifying", "serde", "pem"] }
 hex = "0.4.3"
 k256 = { version = "0.13.4", features = ["serde", "pem"] }
-serde = "1.0.217"
+serde = { version = "1.0.217", features = ["derive"] }
 sha256 = "1.5.0"
 uint = "0.10.0"
 uuid = { version = "1.13.1", features = ["v4", "serde"] }

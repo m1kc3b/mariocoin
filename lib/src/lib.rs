@@ -2,6 +2,7 @@ mod sha256;
 mod types;
 mod utils;
 mod crypto;
+mod error;
 
 use uint::construct_uint;
 use serde::{Deserialize, Serialize};

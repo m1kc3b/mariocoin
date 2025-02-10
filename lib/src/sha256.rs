@@ -37,4 +37,8 @@ impl Hash {
     pub fn zero() -> Self {
         Hash(U256::zero())
     }
+
+    pub fn as_bytes(&self) -> [u8; 32] {
+        self.0.to_little_endian()
+    }
 }
